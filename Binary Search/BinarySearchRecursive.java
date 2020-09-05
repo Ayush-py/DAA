@@ -1,5 +1,5 @@
 import java.util.*;
-class BinarySearch {
+class BinarySearchRecursive {
     static void search(int[] ar, int key, int low, int high){
         
         if(low>high){
