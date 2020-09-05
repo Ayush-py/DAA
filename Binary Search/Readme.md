@@ -1,5 +1,5 @@
 Analysis and Complexity:
-a)	Worst Case
+/a)	Worst Case
 For Binary Search the middle element is looked to check if it is greater than or less than the key element and accordingly, the array is divided into half. Therefore, for the worst case, i.e. when the element is not present in the array, the array will be divide into n/2^k parts.
 Time Complexity: O(log n)
 b)	Average Case
