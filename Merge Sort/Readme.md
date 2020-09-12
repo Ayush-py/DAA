@@ -1,62 +1,62 @@
 Merge Sort Pseudocode: 
 
-procedure mergesort (var a as array)
+    procedure mergesort (var a as array)
 
-   if (n == 1) return a
+    if (n == 1) return a
 
-   var l1 as array = a[0] ... a[n/2]
+    var l1 as array = a[0] ... a[n/2]
 
-   var l2 as array = a[n/2+1] ... a[n]
+    var l2 as array = a[n/2+1] ... a[n]
 
-   l1 = mergesort (l1 )
+    l1 = mergesort (l1 )
 
-   l2 = mergesort(l2 )
+    l2 = mergesort(l2 )
 
-   return merge( l1, l2 )
+    return merge( l1, l2 )
 
-end procedure
+    end procedure
 
-procedure merge( var a as array, var b as array )
+    procedure merge( var a as array, var b as array )
 
-   var c as array
+    var c as array
 
-   while ( a and b have elements )
+    while ( a and b have elements )
 
-      if ( a[0] > b[0] )
+     if ( a[0] > b[0] )
 
          add b[0] to the end of c
 
          remove b[0] from b
 
-      else
+     else
 
          add a[0] to the end of c
 
          remove a[0] from a
 
-      end if
+     end if
 
-   end while
-   
-   while ( a has elements )
+    end while
 
-      add a[0] to the end of c
+    while ( a has elements )
 
-      remove a[0] from a
+         add a[0] to the end of c
 
-   end while
-   
-   while ( b has elements )
+         remove a[0] from a
 
-      add b[0] to the end of c
+    end while
 
-      remove b[0] from b
+    while ( b has elements )
 
-   end while
+         add b[0] to the end of c
 
-      return c
+         remove b[0] from b
 
-end procedure
+    end while
+
+         return c
+
+    end procedure
 
 Analysis:
 
